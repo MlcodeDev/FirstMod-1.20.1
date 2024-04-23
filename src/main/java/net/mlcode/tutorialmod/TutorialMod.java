@@ -14,8 +14,9 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.mlcode.tutorialmod.block.ModBlocks;
 import org.slf4j.Logger;
-import net.mlcode.tutorialmod.Item.ModItem;
+import net.mlcode.tutorialmod.Item.ModItems;
 
 @Mod(TutorialMod.MOD_ID)
 
@@ -27,7 +28,8 @@ public class TutorialMod {
     {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
-        ModItem.register(modEventBus);
+        ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
@@ -39,9 +41,9 @@ public class TutorialMod {
 
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
-            event.accept(ModItem.SAPPHIRE);
-            event.accept(ModItem.RAW_SAPPHIRE);
-            event.accept(ModItem.KUTAS);
+            event.accept(ModItems.SAPPHIRE);
+            event.accept(ModItems.RAW_SAPPHIRE);
+            event.accept(ModItems.KUTAS);
         }
     }
 
