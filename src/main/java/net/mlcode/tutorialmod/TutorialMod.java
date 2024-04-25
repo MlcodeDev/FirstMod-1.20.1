@@ -14,7 +14,7 @@ import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import net.mlcode.tutorialmod.block.ModBlocks;
+import net.mlcode.tutorialmod.Block.ModBlocks;
 import org.slf4j.Logger;
 import net.mlcode.tutorialmod.Item.ModItems;
 
