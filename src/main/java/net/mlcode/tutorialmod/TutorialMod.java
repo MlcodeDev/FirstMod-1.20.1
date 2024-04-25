@@ -44,6 +44,8 @@ public class TutorialMod {
             event.accept(ModItems.SAPPHIRE);
             event.accept(ModItems.RAW_SAPPHIRE);
             event.accept(ModItems.KUTAS);
+            event.accept(ModBlocks.SAPPHIRE_BLOCK);
+            event.accept(ModBlocks.RAW_SAPPHIRE_BLOCK);
         }
     }
 
