@@ -43,9 +43,14 @@ public class TutorialMod {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS){
             event.accept(ModItems.SAPPHIRE);
             event.accept(ModItems.RAW_SAPPHIRE);
-            event.accept(ModItems.KUTAS);
             event.accept(ModBlocks.SAPPHIRE_BLOCK);
             event.accept(ModBlocks.RAW_SAPPHIRE_BLOCK);
+
+            event.accept(ModBlocks.SAPPHIRE_ORE);
+            event.accept(ModBlocks.NETHER_SAPPHIRE_ORE);
+            event.accept(ModBlocks.END_STONE_SAPPHIRE_ORE);
+            event.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
+
         }
     }
 
