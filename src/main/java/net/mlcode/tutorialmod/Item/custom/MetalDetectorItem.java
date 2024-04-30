@@ -10,7 +10,6 @@ import net.minecraft.world.item.context.UseOnContext;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
-import net.minecraftforge.common.Tags;
 
 public class MetalDetectorItem extends Item {
     public MetalDetectorItem(Properties pProperties) {
@@ -24,9 +23,8 @@ public class MetalDetectorItem extends Item {
             Player player = pContext.getPlayer();
             boolean foundBlock = false;
 
-            BlockState state = null;
-            for (int i = 0; i <= positionClicked.getY() + 64; i++) {
-                state = pContext.getLevel().getBlockState(positionClicked.below(i));
+            for(int i = 0; i <= positionClicked.getY() + 64; i++) {
+                BlockState state = pContext.getLevel().getBlockState(positionClicked.below(i));
 
                 if (isValuableBlock(state)) {
                     outputValuableCoordinates(positionClicked.below(i), player, state.getBlock());
@@ -35,16 +33,16 @@ public class MetalDetectorItem extends Item {
                     break;
                 }
             }
+
             if(!foundBlock) {
-                player.sendSystemMessage(Component.literal("No valuables found"));
+                player.sendSystemMessage(Component.literal("No valuables Found!"));
             }
         }
 
-        pContext.getItemInHand().hurtAndBreak(1, pContext.getPlayer(), (player)
-                -> player.broadcastBreakEvent(player.getUsedItemHand()));
+        pContext.getItemInHand().hurtAndBreak(1, pContext.getPlayer(),
+                player -> player.broadcastBreakEvent(player.getUsedItemHand()));
 
         return InteractionResult.SUCCESS;
-
     }
 
     private void outputValuableCoordinates(BlockPos blockPos, Player player, Block block) {
@@ -52,7 +50,7 @@ public class MetalDetectorItem extends Item {
                 "(" + blockPos.getX() + ", " + blockPos.getY() + "," + blockPos.getZ() + ")"));
     }
 
-    private boolean isValuableBlock(BlockState state){
+    private boolean isValuableBlock(BlockState state) {
         return state.is(Blocks.IRON_ORE) || state.is(Blocks.DIAMOND_ORE);
     }
 }

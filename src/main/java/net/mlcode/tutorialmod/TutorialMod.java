@@ -51,6 +51,7 @@ public class TutorialMod {
             event.accept(ModBlocks.END_STONE_SAPPHIRE_ORE);
             event.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
 
+            event.accept(ModItems.METAL_DETECTOR);
         }
     }
 
