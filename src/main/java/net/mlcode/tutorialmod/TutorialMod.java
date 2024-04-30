@@ -52,6 +52,7 @@ public class TutorialMod {
             event.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE);
 
             event.accept(ModItems.METAL_DETECTOR);
+            event.accept(ModBlocks.SOUND_BLOCK);
         }
     }
 
