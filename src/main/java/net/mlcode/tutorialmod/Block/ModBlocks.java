@@ -2,7 +2,7 @@ package net.mlcode.tutorialmod.Block;
 
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.level.block.DropExperienceBlock;
-import net.mlcode.tutorialmod.Block.custom.SoundBlock;
+import net.mlcode.tutorialmod.SoundBlock;
 import net.mlcode.tutorialmod.TutorialMod;
 import net.mlcode.tutorialmod.Item.ModItems;
 import net.minecraft.world.item.BlockItem;

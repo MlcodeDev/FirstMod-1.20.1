@@ -15,6 +15,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.mlcode.tutorialmod.Block.ModBlocks;
+import net.mlcode.tutorialmod.Item.ModFoods;
 import org.slf4j.Logger;
 import net.mlcode.tutorialmod.Item.ModItems;
 
@@ -53,6 +54,10 @@ public class TutorialMod {
 
             event.accept(ModItems.METAL_DETECTOR);
             event.accept(ModBlocks.SOUND_BLOCK);
+
+            event.accept(ModItems.STRAWBERRY);
+            event.accept(ModBlocks.SOUND_BLOCK);
+            event.accept(ModItems.PINE_CONE);
         }
     }
 
