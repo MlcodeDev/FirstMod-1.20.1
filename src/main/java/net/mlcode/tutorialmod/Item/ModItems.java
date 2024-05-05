@@ -28,6 +28,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> PINE_CONE = ITEMS.register("pine_cone",
             () -> new FuelItem(new Item.Properties(), 400));
+    
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
