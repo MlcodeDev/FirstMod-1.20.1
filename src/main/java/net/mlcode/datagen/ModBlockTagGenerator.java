@@ -42,5 +42,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.NEEDS_STONE_TOOL)
                 .add(ModBlocks.NETHER_SAPPHIRE_ORE.get());
+
+        this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
+                .add(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
     }
 }
