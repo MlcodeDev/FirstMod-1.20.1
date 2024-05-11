@@ -15,6 +15,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.mlcode.tutorialmod.Block.ModBlocks;
+import net.mlcode.tutorialmod.Item.ModCreativeModTabs;
 import net.mlcode.tutorialmod.Item.ModFoods;
 import org.slf4j.Logger;
 import net.mlcode.tutorialmod.Item.ModItems;
@@ -31,6 +32,7 @@ public class TutorialMod {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModCreativeModTabs.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);

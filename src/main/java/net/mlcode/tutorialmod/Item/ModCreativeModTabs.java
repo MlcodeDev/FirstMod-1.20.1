@@ -1,6 +1,7 @@
 package net.mlcode.tutorialmod.Item;
 
 import net.mlcode.tutorialmod.TutorialMod;
+import net.mlcode.tutorialmod.Block.ModBlocks;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;
@@ -21,6 +22,22 @@ public class ModCreativeModTabs {
                         pOutput.accept(ModItems.SAPPHIRE.get());
                         pOutput.accept(ModItems.RAW_SAPPHIRE.get());
 
+                        pOutput.accept(ModItems.METAL_DETECTOR.get());
+
+                        pOutput.accept(Items.DIAMOND);
+
+                        pOutput.accept(ModItems.STRAWBERRY.get());
+                        pOutput.accept(ModItems.PINE_CONE.get());
+
+                        pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
+                        pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
+
+                        pOutput.accept(ModBlocks.SAPPHIRE_ORE.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
+                        pOutput.accept(ModBlocks.NETHER_SAPPHIRE_ORE.get());
+                        pOutput.accept(ModBlocks.END_STONE_SAPPHIRE_ORE.get());
+
+                        pOutput.accept(ModBlocks.SOUND_BLOCK.get());
 
                     })
                     .build());

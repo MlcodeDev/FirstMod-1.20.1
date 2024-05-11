@@ -1,6 +1,0 @@
-{
-  "parent": "tutorialmod:block/sound_block",
-  "textures": {
-    "all": "tutorialmod:block/sound_block"
-  }
-}
